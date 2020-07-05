@@ -39,8 +39,8 @@ public class TestController {
 	
 	
 	@PostMapping("/example")
-	public JSONObject example(@RequestBody JSONObject string) {
-	    return string;
+	public String example() {
+	    return "Hello There!";
 	}
 
 	@PostMapping("/analysis")

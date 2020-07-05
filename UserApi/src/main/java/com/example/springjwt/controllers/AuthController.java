@@ -61,7 +61,7 @@ public class AuthController {
 	@GetMapping("/Analysis")
 	public List<Object> getAnalysis(){
 		
-		String url = "http://127.0.0.1:5000/books/";
+		String url = "http://127.0.0.1:5000/analysis/";
 		Object[] objects = restTemplate.getForObject(url, Object[].class);
 		
 		return java.util.Arrays.asList(objects);
